@@ -1,0 +1,20 @@
+/* for all html elements */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(media/lighthouse.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.index-image {
+ height: 3%;
+ width: 3%;
+}
+
