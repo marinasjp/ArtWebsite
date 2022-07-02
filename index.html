@@ -8,8 +8,9 @@
 <body>
     <section class = "header">
         <nav>
-            <a href="index.html"><img class="index-image"src="media/elGato.png"></a>
-            <div class="nav-links">
+            <a href="index.html"><img class="index-image" src="media/elGato.png"></a>
+
+            <div class="nav-links" id="navLinks">
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -17,14 +18,21 @@
                     <li><a href="">CANVAS</a></li>
                 </ul>
             </div>
+
+            <div class="container" onclick="changeIcon(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         </nav>
 
     <div class="front-message">
         <h1>Welcome to my art corner!</h1>
-        </div>
+    </div>
 
     </section>
 
+ <script src="script.js"></script>
 
 </body>
 </html>
