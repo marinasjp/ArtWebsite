@@ -9,35 +9,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+    $(function(){
+      $("#includedContent").load("header.html");
+    });
+    </script>
 </head>
 <body>
-    <section class = "header">
-        <nav>
-            <a href="index.html"><img class="index-image" src="media/elGato.png"></a>
-
-            <div class="nav-links" id="navLinks">
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">GALLERY</a></li>
-                    <li><a href="">CANVAS</a></li>
-                </ul>
-            </div>
-
-            <div class="container" onclick="changeIcon(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-        </nav>
-
+    <div id="includedContent"></div>
     <div class="front-message">
         <h1>Welcome to my art corner!</h1>
     </div>
-
-    </section>
-
- <script src="script.js"></script>
 
 </body>
 </html>
