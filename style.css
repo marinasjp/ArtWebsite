@@ -7,13 +7,13 @@
 
 
 .header{
-    min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(media/lighthouse.jpg);
-    background-position: center;
+    height: 100%;
+    background-image: linear-gradient(0.25turn, #e66465, #9198e5);;
     background-size: cover;
     position: relative;
 }
+
 
 nav{
     overflow: hidden;
@@ -40,7 +40,8 @@ nav img{
 }
 
 .nav-links ul li a{
-    color : darkkhaki;
+    color: gold;
+    font-weight: bold;
     text-decoration: none;  /* gets rid of line underneath links*/
 }
 
@@ -49,7 +50,7 @@ nav img{
     content: "";
     width: 0;
     height: 2px;
-    background: cornflowerblue;
+    background: lightpink;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -63,7 +64,6 @@ nav img{
  height: 5%;
  width: 5%;
 }
-
 
 .front-message{
     width: 90%;
@@ -128,3 +128,48 @@ nav img{
     }
 
 }
+
+/*GALLERY*/
+.title{
+    position: absolute;
+    top: 20px;
+    left: 500px;
+    z-index: 2;
+}
+
+.title h1{
+    font-size: 40pt;
+    color: azure;
+}
+
+.gallery {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    display: inline-block;
+}
+
+.gallery img:hover {
+    border: 1px solid #777;
+}
+
+.gallery img {
+    z-index: 3;
+    position: relative;
+    padding: 10px;
+    width: 300px;
+}
+
+.drawing {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+.desc {
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
