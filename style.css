@@ -106,7 +106,7 @@ nav img{
 }
 
 .gallery img {
-    z-index: 3;
+    z-index: 2;
     position: relative;
     padding: 10px;
     width: 300px;
@@ -144,12 +144,12 @@ nav img{
         top: 0;
         right: -200px;
         text-align: left;
-        z-index: 4;
+        z-index: 3;
         transition: 1s
     }
 
     .container{
-        z-index: 3;
+        z-index: 4;
         cursor: pointer;
     }
 
