@@ -135,6 +135,12 @@ nav img{
     cursor: crosshair;
     position: relative;
     border: 2px solid;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -154,7 +160,7 @@ nav img{
         background: cornflowerblue;
         height: 100vh;
         width: 200px;
-        top: -700px;
+        top: -770px;
         right: 0;
         text-align: left;
         z-index: 3;

@@ -4,7 +4,7 @@ let navLinks = document.getElementById("navLinks")
 function changeIcon(x) {
 
   if (navLinks.style.visibility === "visible"){
-    navLinks.style.top = "-700px";
+    navLinks.style.top = "-770px";
     navLinks.style.visibility = "hidden";
   }
   else{
@@ -22,18 +22,14 @@ let y = 0;
 
 
 const canvas = document.getElementById("canvas");
-canvas.height = 600;
-canvas.width = 1000;
-canvas.style.left = "300px";
-canvas.style.top = "100px";
+canvas.width = window.innerWidth * 0.7;
+canvas.height = window.innerHeight * 0.6;
+canvas.style.top = "130px";
 
 const isMobile = window.matchMedia("only screen and (max-width: 700px)").matches;
 
 if (isMobile) {
-  canvas.height = 600;
-  canvas.width = 450;
-  canvas.style.left = "20px";
-  canvas.style.top = "30px";
+  canvas.style.top = "100px";
 }
 
 const context = canvas.getContext('2d');
