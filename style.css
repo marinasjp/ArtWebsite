@@ -126,6 +126,20 @@ nav img{
 }
 
 
+/* CANVAS*/
+.wrapCanvas{
+    position: absolute;
+}
+
+.wrapCanvas canvas {
+    cursor: crosshair;
+    position: relative;
+    border: 2px solid;
+}
+
+
+
+/*MOBILE DEVICES*/
 @media(max-width: 700px){
     /* SIDE MENU*/
     .front-message h1{
@@ -179,5 +193,5 @@ nav img{
     .title h1{
     font-size: 17pt;
     }
-
 }
+
