@@ -3,11 +3,13 @@ let navLinks = document.getElementById("navLinks")
 
 function changeIcon(x) {
 
-  if (navLinks.style.right === "0px"){
-    navLinks.style.right = "-200px";
+  if (navLinks.style.visibility === "visible"){
+    navLinks.style.top = "-700px";
+    navLinks.style.visibility = "hidden";
   }
   else{
-    navLinks.style.right = "0";
+    navLinks.style.top = "0";
+    navLinks.style.visibility = "visible";
   }
   x.classList.toggle("change");
 }

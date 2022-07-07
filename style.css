@@ -154,11 +154,12 @@ nav img{
         background: cornflowerblue;
         height: 100vh;
         width: 200px;
-        top: 0;
-        right: -200px;
+        top: -700px;
+        right: 0;
         text-align: left;
         z-index: 3;
-        transition: 1s
+        transition: 1s;
+        visibility: hidden;
     }
 
     .container{
