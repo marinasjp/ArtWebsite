@@ -62,16 +62,16 @@ window.addEventListener('mouseup', e => {
 
 //for mobile
 canvas.addEventListener('touchstart', e => {
-  x = e.offsetX;
-  y = e.offsetY;
+  x = e.touches[0].clientX;
+  y = e.touches[0].clientY;
   isDrawing = true;
 });
 
 canvas.addEventListener('touchmove', e => {
   if (isDrawing === true) {
     drawLine(context, x, y, e.offsetX, e.offsetY);
-    x = e.offsetX;
-    y = e.offsetY;
+    x = e.touches[0].clientX;
+    y = e.touches[0].clientY;
   }
 });
 
@@ -94,3 +94,20 @@ function drawLine(context, x1, y1, x2, y2) {
   context.stroke();
   context.closePath();
 }
+
+// Prevent scrolling when touching the canvas
+document.body.addEventListener("touchstart", function (e) {
+  if (e.target === canvas) {
+    e.preventDefault();
+  }
+}, false);
+document.body.addEventListener("touchend", function (e) {
+  if (e.target === canvas) {
+    e.preventDefault();
+  }
+}, false);
+document.body.addEventListener("touchmove", function (e) {
+  if (e.target === canvas) {
+    e.preventDefault();
+  }
+}, false);
